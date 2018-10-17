@@ -1,0 +1,1 @@
+Get-ChildItem -Path *.ps1 -Recurse | Rename-Item -Path {$_.FullName} -NewName {$_.FullName -replace '.ps1', '.txt'} -WhatIf
