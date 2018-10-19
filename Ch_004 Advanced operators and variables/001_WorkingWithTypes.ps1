@@ -1,0 +1,11 @@
+$true -is [bool]
+$true -is [System.Object]
+$true -is [System.ValueType]
+'hi' -is [System.ValueType]
+'hi' -is [System.Object]
+12 -is [int]
+12 -is 'int'
+$true -isnot [string]
+$null -isnot [System.Object]
+'123' -as [int]
+123 -as [string]
